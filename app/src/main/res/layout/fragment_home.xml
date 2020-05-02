@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorPrimaryDark"
+        android:padding="13dp"
+
+        android:id="@+id/edit_lay_from">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edit_from"
+            android:hint="From"
+            android:padding="9dp"
+            android:layout_marginTop="3dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintTop_toBottomOf="@+id/edit_lay_from"
+        android:padding="13dp"
+        android:id="@+id/edit_lay_dest">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edit_destination"
+            android:hint="Destination"
+            android:background="@drawable/border"
+            android:padding="9dp"
+            android:layout_marginTop="3dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:text="@string/title_home"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_lay_dest"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--<com.mancj.materialsearchbar.MaterialSearchBar-->
+<!--style="@style/MaterialSearchBarLight"-->
+<!--app:mt_speechMode="true"-->
+<!--app:mt_hint="Custom hint"-->
+<!--app:layout_constraintTop_toBottomOf="@+id/edit_lay_dest"-->
+<!--app:mt_maxSuggestionsCount="10"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+
+<!--android:id="@+id/searchBar" />-->

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    baby blue-->
+    <color name="colorPrimary">#e7f6fc</color>
+<!--    teal green-->
+    <color name="colorPrimaryDark">#008080</color>
+<!--    teal-->
+    <color name="colorAccent">#a5cfe3</color>
+</resources>
